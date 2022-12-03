@@ -18,7 +18,6 @@ for s in sacks:
         for item in compartment_left:
             if item in compartment_right:
                 running_total += get_char_int(item)
-                print(compartment_left + " " + compartment_right + " " + item + " " + str(get_char_int(item)))
                 break
 
 print(running_total)
