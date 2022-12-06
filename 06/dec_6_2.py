@@ -7,12 +7,10 @@ for character in input:
         occurences = current_slice.count(c)
         if occurences > 1:
             duplicate_detected = True
+            index += 1
             break
 
-    if duplicate_detected:
-        index += 1
-        continue
-    else:
+    if not duplicate_detected:
         print(current_slice)
         print(index + 14)
         break
