@@ -9,8 +9,6 @@ def visible_from_above(tree_value, row_index, column_index):
         if tree_above_value >= tree_value:
             return False
         offset += 1
-
-    print(row_index,column_index,"visbile from above","value",str(tree_value))
     return True
 
 def visible_from_below(tree_value, row_index, column_index):
@@ -20,8 +18,6 @@ def visible_from_below(tree_value, row_index, column_index):
         if tree_below_value >= tree_value:
             return False
         offset += 1
-
-    print(row_index,column_index,"visbile from below","value",str(tree_value))
     return True
 
 def visible_from_right(tree_value, row_index, column_index):
@@ -31,8 +27,6 @@ def visible_from_right(tree_value, row_index, column_index):
         if tree_right_value >= tree_value:
             return False
         offset += 1
-
-    print(row_index,column_index,"visbile from right","value",str(tree_value))
     return True
 
 def visible_from_left(tree_value, row_index, column_index):
@@ -42,8 +36,6 @@ def visible_from_left(tree_value, row_index, column_index):
         if tree_left_value >= tree_value:
             return False
         offset += 1
-
-    print(row_index,column_index,"visbile from left","value",str(tree_value))
     return True
 
 def is_visible(row_index,column_index):
