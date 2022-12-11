@@ -30,11 +30,11 @@ def hydrate_monkeys():
 
 def reduce_monkey_item(current_item):
 
-    current_item = current_item % magic_num
+    current_item = current_item % lcm_num
     return current_item
 
 hydrate_monkeys()
-magic_num = lcm(divs)
+lcm_num = lcm(divs)
 
 
 for r in range(rounds):
@@ -59,7 +59,7 @@ for r in range(rounds):
 
     for m in monkeys:
         for i in range(len(m["items"])):
-            if m["items"][i] > magic_num:
+            if m["items"][i] > lcm_num:
                 m["items"][i] = reduce_monkey_item(m["items"][i])
 
 shenanigans = []
